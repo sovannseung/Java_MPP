@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;TaxValue&apos; to &apos;Tax&apos;&#x0D;&#x0A;- Original project: &apos;05 Lab_5.1&apos;&#x0D;&#x0A;- Original element: &apos;TaxValue&apos;&#x0D;&#x0A;- Renamed element: &apos;Tax&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TaxValue&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{TaxValue.java[TaxValue" matchStrategy="1" name="Tax" qualified="false" references="true" similarDeclarations="false" stamp="1548187137601" textual="false" version="1.0"/>
+</session>

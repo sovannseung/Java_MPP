@@ -1,0 +1,23 @@
+import java.time.LocalDate;
+
+public abstract class Employee {
+	private int empId;
+	
+	public Employee(int empId) {
+		this.empId = empId;
+	}
+
+	public void print() {
+		LocalDate now = LocalDate.of(2019, 01, 22);
+		Paycheck payCheck = calcCompensation(now.getMonthValue(), now.getYear());
+		payCheck.print();
+	}
+	
+	public Paycheck calcCompensation(int month, int year) {
+		double grossPay = calcGrossPay(month, year);
+		return new Paycheck(this, grossPay, Tax.FICA, Tax.STATE, Tax.LOCAL, Tax.MEDICARE, Tax.SSN);
+	}
+	
+	public abstract double calcGrossPay(int month, int year);
+	
+}

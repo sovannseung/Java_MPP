@@ -1,0 +1,20 @@
+
+public abstract class Employee {
+	private int empId;
+	
+	public Employee(int empId) {
+		this.empId = empId;
+	}
+
+	public void print() {
+		
+	}
+	
+	public Paycheck calcCompensation(int month, int year) {
+		double grossPay = calcGrossPay(month, year);
+		return new Paycheck(this, grossPay, Tax.FICA, Tax.State, Tax.Local, Tax.Medicare, Tax.SSN);
+	}
+	
+	public abstract double calcGrossPay(int month, int year);
+	
+}

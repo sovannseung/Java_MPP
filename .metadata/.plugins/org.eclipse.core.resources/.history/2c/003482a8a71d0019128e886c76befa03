@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Commissioned extends Employee {
+	
+	private double commission;
+	private double baseSalary;
+	private List<Order> order;
+	
+	public Commissioned(int empId, double commission, double baseSalary) {
+		super(empId);
+		this.commission = commission;
+		this.baseSalary = baseSalary;
+		order = new ArrayList<Order>();
+	}
+	
+	public void addOrder(Order o) {
+		order.add(o);
+	}
+
+	@Override
+	public double calcGrossPay(String payPeriod) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+}

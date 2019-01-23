@@ -1,0 +1,14 @@
+
+public class Hourly extends Employee {
+
+	public Hourly(int empId) {
+		super(empId);
+	}
+
+	@Override
+	public double calcGrossPay(String payPeriod) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,32 @@
+
+public class SavingsAccount extends Account {
+	
+	private double balance;
+	private double interestRate;
+	private String acctId;
+	
+	public SavingsAccount(double balance, double interestRate, String acctId) {
+		this.balance = balance;
+		this.interestRate = interestRate;
+		this.acctId = acctId;
+	}
+
+	@Override
+	public String getAccountID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double computeUpdatedBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

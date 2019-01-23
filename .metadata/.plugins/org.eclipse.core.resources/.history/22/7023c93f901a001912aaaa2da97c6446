@@ -1,0 +1,15 @@
+
+public class US_Mail extends ShippingUSA {
+
+	public US_Mail(String description, double weight, String zone) {
+		super(description, weight, zone);
+	}
+	
+	public double getRate() {
+		if(getWeight() < 3)
+			return 1;
+		else
+			return 0.55;
+	}
+
+}
