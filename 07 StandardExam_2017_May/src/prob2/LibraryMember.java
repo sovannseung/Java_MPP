@@ -57,7 +57,6 @@ public class LibraryMember {
 		return flag;
 	}
 	
-	
 	public static final Comparator PHONE = new Comparator(){
 		public int compare(Object o1, Object o2){
 			

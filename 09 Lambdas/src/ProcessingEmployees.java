@@ -102,7 +102,6 @@ public class ProcessingEmployees
           .sorted()
           .forEach(System.out::println);
       
-      
       System.out.println("\n ***** 6)  Print out the average of all the salaries. *****");
       System.out.println("Answer:" +
       list.stream()
